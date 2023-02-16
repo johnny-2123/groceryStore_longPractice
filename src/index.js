@@ -4,11 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 
+
 function Root() {
   return (
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   );
 }
 
