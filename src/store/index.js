@@ -6,7 +6,7 @@ const rootReducer = combineReducers({
 
 let enhancer;
 
-if (ProcessingInstruction.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== "production") {
     const logger = require("redux-logger").default;
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     enhancer = composeEnhancers(applyMiddleware(logger));
